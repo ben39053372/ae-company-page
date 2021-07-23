@@ -3,8 +3,14 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
-    name: 'Home',
-    component: () => import('../screens/Home.vue'),
+    component: () => import('../Layouts/Main.vue'),
+    children: [
+      {
+        name: 'Home',
+        path: '/',
+        component: () => import('../screens/Home.vue'),
+      },
+    ],
   },
   {
     path: '/detail',
