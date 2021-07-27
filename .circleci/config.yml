@@ -19,7 +19,7 @@ jobs:
           name: Install husky
       - run:
           command: |
-            npm i --only=prod
+            npm i
           name: Install package
       - run:
           command: |
