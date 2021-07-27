@@ -23,5 +23,12 @@ jobs:
           name: Install package
       - run:
           command: |
+            npm run eslint && npm run stylelint
+          name: code lint
+      - run:
+          command: |
             npm run build
           name: Build
+      - run:
+          command: |
+            npm run
