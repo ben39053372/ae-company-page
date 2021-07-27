@@ -6,8 +6,8 @@
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
     "prepare": "husky install",
-    "eslint": "npx eslint \"src/**/*.{js,tsx,tsx,ts,vue}\" --fix",
-    "stylelint": "npx stylelint \"src/**/*.{js,tsx,tsx,ts,vue}\" --fix "
+    "eslint": "npx eslint \"src/**/*.{js,tsx,tsx,ts,vue}\"",
+    "stylelint": "npx stylelint \"src/**/*.{js,tsx,tsx,ts,vue}\""
   },
   "dependencies": {
     "vue": "^3.0.5",
