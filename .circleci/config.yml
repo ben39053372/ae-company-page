@@ -15,6 +15,10 @@ jobs:
       - checkout
       - run:
           command: |
+            npx husky Install
+          name: Install husky
+      - run:
+          command: |
             npm i --only=prod
           name: Install package
       - run:
