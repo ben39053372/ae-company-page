@@ -6,6 +6,10 @@ orbs: # declare what orbs we are going to use
 
 # Orchestrate or schedule a set of jobs
 workflows:
+  version: 1
+  build_and_test:
+    jobs:
+      - build
 
 jobs:
   build:
