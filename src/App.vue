@@ -12,6 +12,8 @@
 </script>
 
 <style src="./styles/index.css"></style>
+<style src="./styles/spacing.css"></style>
+<style src="./styles/color.css"></style>
 
 <style>
   #app {
