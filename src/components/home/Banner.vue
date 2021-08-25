@@ -21,7 +21,7 @@
     </Container>
     <a class="more"
       >{{ t('learn more') }}
-      <img width="4" height="9" src="/images/homePage/rightArrowWhite.webp"
+      <img width="4" height="9" src="/icons/rightArrowWhite.webp"
     /></a>
   </div>
 </template>
@@ -77,6 +77,7 @@
     color: #fff;
     display: flex;
     align-items: center;
+    transform: translateX(-50%);
   }
 
   .more img {

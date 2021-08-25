@@ -4,11 +4,8 @@
     <img
       width="4"
       height="9"
-      src="/images/homePage/rightArrowRed.webp"
-      srcset="
-        /images/homePage/rightArrowRed.webp    1x,
-        /images/homePage/rightArrowRed@2x.webp 2x
-      "
+      src="/icons/rightArrowRed.webp"
+      srcset="/icons/rightArrowRed.webp 1x, /icons/rightArrowRed@2x.webp 2x"
     />
   </div>
 </template>
