@@ -1,31 +1,40 @@
 <template>
   <div class="header">
-    <div class="logo">
-      <a>CompanyLogo</a>
-    </div>
-    <div class="links">
-      <a>Home</a>
-      <a>Contact</a>
-      <a>About</a>
-    </div>
+    <Container>
+      <img src="/LOGO.png" />
+      <a id="anchor-index">{{ t('index') }}</a>
+      <a id="anchor-company-profile">{{ t('Company Profile') }}</a>
+      <a id="anchor-office-environment">{{ t('Office Environment') }}</a>
+      <a id="anchor-company-culture">{{ t('Company Culture') }}</a>
+      <a id="anchor-contact-us">{{ t('Contact Us') }}</a>
+      <a id="anchor-join-us">{{ t('Join Us') }}</a>
+    </Container>
   </div>
 </template>
 <script>
   import { defineComponent } from '@vue/runtime-core';
-
-  export default defineComponent({});
+  import { useI18n } from 'vue-i18n';
+  import Container from './Container.vue';
+  export default defineComponent({
+    components: { Container },
+    setup() {
+      const { t } = useI18n();
+      return { t };
+    },
+  });
 </script>
 
 <style scoped>
   .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #eae0d5;
+    background-color: #000;
+    color: rgba(255, 255, 255, 0.6);
   }
 
-  .links > * {
-    margin: 5px 10px;
+  .header > div {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px 0;
   }
 </style>
