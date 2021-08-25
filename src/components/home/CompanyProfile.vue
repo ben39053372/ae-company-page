@@ -18,7 +18,7 @@
         <p>
           {{ t('companyProfile.p1') }}
         </p>
-        <h3>{{ t('companyProfile.strategy&target') }}</h3>
+        <h4>{{ t('companyProfile.strategy&target') }}</h4>
         <p>
           {{ t('companyProfile.p2') }}
         </p>
