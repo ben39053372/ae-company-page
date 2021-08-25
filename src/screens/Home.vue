@@ -1,25 +1,43 @@
 <template>
-  <div>Home {{ t('name') }}</div>
-  <button @click="add">add</button>
-  <button @click="sub">sub</button>
-  <div>counter: {{ counter }}</div>
+  <div class="home">
+    <HomeBanner />
+    <CompanyProfile />
+    <OfficeEnvironment />
+    <CompanyCulture />
+    <ContactUs />
+  </div>
 </template>
 <script>
-  import { computed, defineComponent } from 'vue';
+  import { defineComponent } from 'vue';
   import { useI18n } from 'vue-i18n';
-  import { useStore } from '../store';
-  import { CounterActionsType } from '../store/modules/counter';
+  import CompanyProfile from '../components/home/CompanyProfile.vue';
+  import OfficeEnvironment from '../components/home/OfficeEnvironment.vue';
+  import CompanyCulture from '../components/home/CompanyCulture.vue';
+  import ContactUs from '../components/home/ContactUs.vue';
+  import HomeBanner from '../components/home/Banner.vue';
+
   export default defineComponent({
     name: 'Home',
+    components: {
+      CompanyProfile,
+      OfficeEnvironment,
+      CompanyCulture,
+      ContactUs,
+      HomeBanner,
+    },
     setup() {
-      const store = useStore();
       const { t } = useI18n();
       return {
         t,
-        counter: computed(() => store.state.counter.count),
-        add: () => store.dispatch(`counter/${CounterActionsType.add}`),
-        sub: () => store.dispatch(`counter/${CounterActionsType.sub}`),
       };
     },
   });
 </script>
+
+<style scoped>
+  .home {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+</style>

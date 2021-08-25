@@ -1,0 +1,46 @@
+{
+  "Traditional Chinese": "繁體中文",
+  "index": "首頁",
+  "Company Profile": "公司簡介",
+  "Office Environment": "辦公環境",
+  "Company Culture": "公司文化",
+  "Contact Us": "聯繫我們",
+  "Join Us": "加入我們",
+  "HONG KONG ASIA ELITE NETWORK TECHNOLOGY CO., LTD": "香港亞特網絡科技有限公司",
+  "learn more": "進一步了解",
+  "homeBanner": {
+    "p1": "香港亞特網絡科技以{0}的高質量產品為服務宗旨主要為海外客戶提供高質量的軟件研發及數據中心維護服務",
+    "p1-red": "高效-快捷、極低成本、內容豐富、安全穩定",
+    "p2": "Hong Kong ATC network technology to efficient low-cost, rich, safe and stable high-quality products for the purpose of providing overseas customers with high-quality software development and data center maintenance services"
+  },
+  "companyProfile": {
+    "p1": "香港亞特網絡科技有限公司成立於2018年，註冊於香港，主要為海外客戶提供高質量的軟件研發及數據中心維護服務，現已承接多家遊戲及娛樂平臺。",
+    "strategy&target": "企業策略及目標",
+    "p2": "亞特網絡立誌成為在全球具有競爭力的軟件研發及數據中心維護服務供應商。",
+    "p3": "展望未來，亞特網絡將持續專註於尋求更多的海外合作夥伴，將我們的業務全球化，相信隨著的業務的拓展和鞏固，我們將會成為在全球有競爭力的數據中心維護服務供應商。"
+  },
+  "companyCulture": {
+    "vision": {
+      "title": "願景",
+      "sub": "用戶導向、坦誠直接、擁抱變化、持續改進",
+      "p": "我們尊重差異，我們註重成長，我們把\"為用戶創造美好體驗\"作為永恒的追求我們秉承\"從優秀到卓越\"的精神在見證公司成長的同時，也成就自身的職業輝煌"
+    },
+    "mission": {
+      "title": "使命",
+      "sub": "為用戶創造高品質的產品體驗",
+      "p": "為用戶創造具備優質和完美體驗的產品是亞特永恆的追求"
+    },
+    "values": {
+      "title": "價值觀",
+      "sub": "關愛 共贏 勇於創新 全力以赴",
+      "p": "待人真誠，彼此包容，為人正直，懂得感恩，壹起營造壹個輕鬆快樂的大家庭關註同事成長，和亞特壹起進步；關註用戶，用戶價值至上，提供公平公正的平臺環境提倡敢想敢做，鼓勵大膽創新，追求卓越每個人都是公司的主人翁，主動積極，尋求突破，每壹件事情都能全力以赴"
+    },
+    "management": {
+      "title": "管理理念",
+      "sub": "共同成長 打造學習型團隊",
+      "p": "心有多大，舞臺就有多大以人為本，鼓勵每個人的想法，主動積極、想到就做、勇於冒險、不怕犯錯無限去探討可能性。強化執行能力，攻必克，戰必勝，每個人都是公司的主人翁，有必勝的決心"
+    }
+  },
+  "company address": "香港觀塘區雙港灣廣場偉業街180號26樓",
+  "phone": "852-95875005"
+}
