@@ -2,12 +2,22 @@
   <div class="header">
     <Container>
       <img src="/LOGO.png" />
-      <a id="anchor-index">{{ t('index') }}</a>
-      <a id="anchor-company-profile">{{ t('Company Profile') }}</a>
-      <a id="anchor-office-environment">{{ t('Office Environment') }}</a>
-      <a id="anchor-company-culture">{{ t('Company Culture') }}</a>
-      <a id="anchor-contact-us">{{ t('Contact Us') }}</a>
-      <a id="anchor-join-us">{{ t('Join Us') }}</a>
+      <router-link id="anchor-index" to="/">{{ t('index') }}</router-link>
+      <router-link id="anchor-company-profile" to="/">{{
+        t('Company Profile')
+      }}</router-link>
+      <router-link id="anchor-office-environment" to="/">{{
+        t('Office Environment')
+      }}</router-link>
+      <router-link id="anchor-company-culture" to="/">{{
+        t('Company Culture')
+      }}</router-link>
+      <router-link id="anchor-contact-us" to="/">{{
+        t('Contact Us')
+      }}</router-link>
+      <router-link id="anchor-join-us" to="/join_us">{{
+        t('Join Us')
+      }}</router-link>
     </Container>
   </div>
 </template>
@@ -36,5 +46,14 @@
     justify-content: space-around;
     align-items: center;
     padding: 16px 0;
+  }
+
+  a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+  }
+
+  #anchor-join-us.router-link-exact-active {
+    color: #fff;
   }
 </style>
