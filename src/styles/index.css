@@ -3,26 +3,14 @@ body {
   font-family: PingFangSC-Regular, sans-serif;
 }
 
-h1 {
-  font-size: 3rem;
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.625rem;
-}
-
-h4 {
-  font-size: 0.875rem;
-}
-
-p {
-  font-size: 0.6875rem;
-}
-
-.red {
-  color: var(--red);
+@media only screen and (max-width: 460px) {
+  .hiddenOnMobile {
+    display: none;
+  }
 }

@@ -14,11 +14,4 @@
 <style src="./styles/index.css"></style>
 <style src="./styles/spacing.css"></style>
 <style src="./styles/color.css"></style>
-
-<style>
-  #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-</style>
+<style src="./styles/font.css"></style>
