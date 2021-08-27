@@ -30,6 +30,5 @@
 <style scoped>
   .footer {
     background-color: var(--footer-color);
-    margin-top: calc(var(--space-md) * -1);
   }
 </style>
