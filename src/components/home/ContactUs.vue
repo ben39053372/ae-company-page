@@ -1,49 +1,42 @@
 <template lang="">
   <div class="contactUs">
-    <h1>聯系我們</h1>
+    <h1>{{ $t('Contact Us') }}</h1>
     <div class="grid">
       <div>
         <div>
           <img width="34" height="48" src="/images/homePage/地址.webp" />
         </div>
-        <span class="detail">{{ t('company address') }}</span>
+        <span class="detail">{{ $t('company address') }}</span>
       </div>
 
       <div>
         <div>
           <img width="49" height="49" src="/images/homePage/电话.webp" />
         </div>
-        <span class="detail">{{ t('phone') }}</span>
+        <span class="detail">{{ $t('phone') }}</span>
       </div>
 
       <div>
         <div>
           <img width="47" height="39" src="/images/homePage/邮箱.webp" />
         </div>
-        <span class="detail">hr@asia-elites.net</span>
+        <span class="detail">{{ HR_EMAIL }}</span>
       </div>
 
       <div>
         <div>
           <img width="51" height="51" src="/images/homePage/互联网金额.webp" />
         </div>
-        <span class="detail">www.asia-elites.com</span>
+        <span class="detail">{{ WEB }}</span>
       </div>
     </div>
 
     <hr />
   </div>
 </template>
-<script lang="ts">
-  import { defineComponent } from '@vue/runtime-core';
-  import { useI18n } from 'vue-i18n';
 
-  export default defineComponent({
-    setup() {
-      const { t } = useI18n();
-      return { t };
-    },
-  });
+<script lang="ts" setup>
+  import { HR_EMAIL, WEB } from '../../const';
 </script>
 
 <style scoped>

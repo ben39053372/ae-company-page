@@ -1,37 +1,35 @@
-<template>
+<template lang="">
   <div class="header">
     <Container>
-      <img src="/LOGO.png" />
-      <router-link id="anchor-index" to="/">{{ t('index') }}</router-link>
-      <router-link id="anchor-company-profile" to="/">{{
-        t('Company Profile')
+      <img src="/logos/LOGO.png" />
+      <router-link id="anchor-index" class="hiddenOnMobile" to="/">{{
+        $t('index')
       }}</router-link>
-      <router-link id="anchor-office-environment" to="/">{{
-        t('Office Environment')
+      <router-link id="anchor-company-profile" class="hiddenOnMobile" to="/">{{
+        $t('Company Profile')
       }}</router-link>
-      <router-link id="anchor-company-culture" to="/">{{
-        t('Company Culture')
+      <router-link
+        id="anchor-office-environment"
+        class="hiddenOnMobile"
+        to="/"
+        >{{ $t('Office Environment') }}</router-link
+      >
+      <router-link id="anchor-company-culture" class="hiddenOnMobile" to="/">{{
+        $t('Company Culture')
       }}</router-link>
-      <router-link id="anchor-contact-us" to="/">{{
-        t('Contact Us')
+      <router-link id="anchor-contact-us" class="hiddenOnMobile" to="/">{{
+        $t('Contact Us')
       }}</router-link>
-      <router-link id="anchor-join-us" to="/join_us">{{
-        t('Join Us')
+      <router-link id="anchor-join-us" class="hiddenOnMobile" to="/join_us">{{
+        $t('Join Us')
       }}</router-link>
+      <LangSelector />
     </Container>
   </div>
 </template>
-<script>
-  import { defineComponent } from '@vue/runtime-core';
-  import { useI18n } from 'vue-i18n';
+<script setup>
   import Container from './Container.vue';
-  export default defineComponent({
-    components: { Container },
-    setup() {
-      const { t } = useI18n();
-      return { t };
-    },
-  });
+  import LangSelector from './LangSelector.vue';
 </script>
 
 <style scoped>

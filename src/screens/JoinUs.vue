@@ -1,4 +1,9 @@
 <template lang="">
-  <div></div>
+  <Banner />
+  <SubTitleBar />
+  <router-view></router-view>
 </template>
-<script></script>
+<script setup>
+  import Banner from '../components/joinUs/Banner.vue';
+  import SubTitleBar from '../components/joinUs/Navbar.vue';
+</script>

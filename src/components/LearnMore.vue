@@ -1,6 +1,6 @@
 <template lang="">
   <div class="learnMore red">
-    <span class="text">{{ t('learn more') }}</span>
+    <span class="text">{{ $t('learn more') }}</span>
     <img
       width="4"
       height="9"
@@ -9,17 +9,6 @@
     />
   </div>
 </template>
-
-<script lang="ts">
-  import { defineComponent } from 'vue';
-  import { useI18n } from 'vue-i18n';
-  export default defineComponent({
-    setup() {
-      const { t } = useI18n();
-      return { t };
-    },
-  });
-</script>
 
 <style scoped>
   .learnMore {

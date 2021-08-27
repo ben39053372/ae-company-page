@@ -9,37 +9,24 @@
       "
     />
     <Container class="center">
-      <h1>{{ t('HONG KONG ASIA ELITE NETWORK TECHNOLOGY CO., LTD') }}</h1>
+      <h1>{{ $t('HONG KONG ASIA ELITE NETWORK TECHNOLOGY CO., LTD') }}</h1>
 
       <i18n-t keypath="homeBanner.p1" tag="p">
-        <span class="red">{{ t('homeBanner.p1-red') }}</span>
+        <span class="red">{{ $t('homeBanner.p1-red') }}</span>
       </i18n-t>
 
-      <p>
-        {{ t('homeBanner.p2') }}
+      <p class="hiddenOnMobile">
+        {{ $t('homeBanner.p2') }}
       </p>
     </Container>
     <a class="more"
-      >{{ t('learn more') }}
+      >{{ $t('learn more') }}
       <img width="4" height="9" src="/icons/rightArrowWhite.webp"
     /></a>
   </div>
 </template>
-<script lang="ts">
-  import { defineComponent } from 'vue';
+<script lang="ts" setup>
   import Container from '../Container.vue';
-  import { useI18n } from 'vue-i18n';
-
-  export default defineComponent({
-    name: 'HomeBanner',
-    components: {
-      Container,
-    },
-    setup() {
-      const { t } = useI18n();
-      return { t };
-    },
-  });
 </script>
 
 <style scoped>

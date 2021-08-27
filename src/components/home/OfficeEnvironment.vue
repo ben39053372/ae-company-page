@@ -1,36 +1,30 @@
 <template lang="">
   <div class="officeEnvironment">
-    <h2>办公环境</h2>
+    <h4>{{ $t('Office Environment') }}</h4>
     <LearnMore class="more" />
     <div class="images">
       <div>
         <img src="/images/homePage/辦公區域.webp" />
-        <div>办公区域</div>
+        <div>{{ $t('Office area') }}</div>
       </div>
       <div>
         <img src="/images/homePage/公共討論區.webp" />
-        <div>公共讨论区</div>
+        <div>{{ $t('Public discussion area') }}</div>
       </div>
       <div>
         <img src="/images/homePage/咖啡廳.webp" />
-        <div>咖啡厅</div>
+        <div>{{ $t('Cafe') }}</div>
       </div>
       <div>
         <img src="/images/homePage/公司外景.webp" />
-        <div>公司外景</div>
+        <div>{{ $t('Outdoor Scene') }}</div>
       </div>
     </div>
   </div>
 </template>
 
-<script lang="ts">
-  import { defineComponent } from 'vue';
+<script lang="ts" setup>
   import LearnMore from '../LearnMore.vue';
-  export default defineComponent({
-    components: {
-      LearnMore,
-    },
-  });
 </script>
 
 <style scoped>

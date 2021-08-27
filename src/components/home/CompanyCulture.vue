@@ -1,6 +1,6 @@
 <template lang="">
   <div class="companyCulture">
-    <h2>公司文化</h2>
+    <h4>{{ $t('Company Culture') }}</h4>
     <LearnMore />
     <div class="grid">
       <div id="vision">
@@ -13,10 +13,10 @@
             /images/homePage/企业愿景@2x.webp 2x
           "
         />
-        <h2>{{ t('companyCulture.vision.title') }}</h2>
-        <h4>{{ t('companyCulture.vision.sub') }}</h4>
+        <h4>{{ $t('companyCulture.vision.title') }}</h4>
+        <h6>{{ $t('companyCulture.vision.sub') }}</h6>
         <p>
-          {{ t('companyCulture.vision.p') }}
+          {{ $t('companyCulture.vision.p') }}
         </p>
       </div>
 
@@ -30,10 +30,10 @@
             /images/homePage/企业使命@2x.webp 2x
           "
         />
-        <h2>{{ t('companyCulture.mission.title') }}</h2>
-        <h4>{{ t('companyCulture.mission.sub') }}</h4>
+        <h4>{{ $t('companyCulture.mission.title') }}</h4>
+        <h6>{{ $t('companyCulture.mission.sub') }}</h6>
         <p>
-          {{ t('companyCulture.mission.p') }}
+          {{ $t('companyCulture.mission.p') }}
         </p>
       </div>
       <div id="values">
@@ -46,38 +46,26 @@
             /images/homePage/眼睛@2x.webp 2x
           "
         />
-        <h2>{{ t('companyCulture.values.title') }}</h2>
-        <h4>{{ t('companyCulture.values.sub') }}</h4>
+        <h4>{{ $t('companyCulture.values.title') }}</h4>
+        <h6>{{ $t('companyCulture.values.sub') }}</h6>
         <p>
-          {{ t('companyCulture.values.p') }}
+          {{ $t('companyCulture.values.p') }}
         </p>
       </div>
       <div id="management">
         <img width="76" height="75" src="/images/homePage/互联网.webp" />
-        <h2>{{ t('companyCulture.management.title') }}</h2>
-        <h4>{{ t('companyCulture.management.sub') }}</h4>
+        <h4>{{ $t('companyCulture.management.title') }}</h4>
+        <h6>{{ $t('companyCulture.management.sub') }}</h6>
         <p>
-          {{ t('companyCulture.management.p') }}
+          {{ $t('companyCulture.management.p') }}
         </p>
       </div>
     </div>
   </div>
 </template>
 
-<script lang="ts">
-  import { defineComponent } from '@vue/runtime-core';
+<script lang="ts" setup>
   import LearnMore from '../LearnMore.vue';
-  import { useI18n } from 'vue-i18n';
-
-  export default defineComponent({
-    components: {
-      LearnMore,
-    },
-    setup() {
-      const { t } = useI18n();
-      return { t };
-    },
-  });
 </script>
 
 <style scoped>
@@ -102,19 +90,8 @@
     background-color: var(--bg-color);
   }
 
-  /*
-  #vision {
-  }
-
-  #mission {
-  } */
-
   #values {
     background-color: var(--red);
     color: #fff;
   }
-
-  /*
-  #management {
-  } */
 </style>

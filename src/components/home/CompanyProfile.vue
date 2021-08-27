@@ -6,7 +6,7 @@
         <LearnMore />
       </div>
       <img
-        class="image"
+        class="image hiddenOnMobile"
         src="/images/homePage/摄图网_401355724_查看人物简介.webp"
         srcset="
           /images/homePage/摄图网_401355724_查看人物简介.webp    1x,
@@ -14,39 +14,24 @@
         "
       />
       <div class="text">
-        <h2>{{ t('Company Profile') }}</h2>
+        <h4>{{ $t('Company Profile') }}</h4>
         <p>
-          {{ t('companyProfile.p1') }}
+          {{ $t('companyProfile.p1') }}
         </p>
-        <h4>{{ t('companyProfile.strategy&target') }}</h4>
+        <h6>{{ $t('companyProfile.strategy&target') }}</h6>
         <p>
-          {{ t('companyProfile.p2') }}
+          {{ $t('companyProfile.p2') }}
         </p>
         <p>
-          {{ t('companyProfile.p3') }}
+          {{ $t('companyProfile.p3') }}
         </p>
       </div>
     </Container>
   </div>
 </template>
-<script lang="ts">
-  import { defineComponent } from 'vue';
+<script lang="ts" setup>
   import Container from '../Container.vue';
   import LearnMore from '../LearnMore.vue';
-  import { useI18n } from 'vue-i18n';
-
-  export default defineComponent({
-    components: {
-      Container,
-      LearnMore,
-    },
-    setup() {
-      const { t } = useI18n();
-      return {
-        t,
-      };
-    },
-  });
 </script>
 
 <style scoped>
