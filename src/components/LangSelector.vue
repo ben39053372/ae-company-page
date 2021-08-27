@@ -1,9 +1,9 @@
 <template lang="">
   <div class="langSelector">
     <div class="trigger" @click="onTriggerClick">
-      <img v-if="selectedLang.id === 'zh-HK'" src="/icons/hk.webp" />
-      <img v-if="selectedLang.id === 'zh-CN'" src="/icons/china.webp" />
-      <span class="hiddenOnMobile">{{ selectedLang.name }}</span>
+      <img v-if="selectedLang?.id === 'zh-HK'" src="/icons/hk.webp" />
+      <img v-if="selectedLang?.id === 'zh-CN'" src="/icons/china.webp" />
+      <span class="hiddenOnMobile">{{ selectedLang?.name }}</span>
     </div>
     <div v-if="open" class="backdrop" @click="closeLangList" />
     <div v-show="open" class="list">
