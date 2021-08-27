@@ -4,13 +4,13 @@
 
 <style scoped>
   .container {
-    max-width: 90%;
+    max-width: 99%;
     margin: 0 auto;
   }
 
   @media only screen and (min-width: 640px) {
     .container {
-      max-width: 85%;
+      max-width: 90%;
     }
   }
 
