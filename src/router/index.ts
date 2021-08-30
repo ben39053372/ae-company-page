@@ -15,15 +15,15 @@ const routes: RouteRecordRaw[] = [
         path: '/join_us',
         component: () => import('../screens/JoinUs.vue'),
         children: [
-          {
-            path: '',
-            component: () => import('../screens/SocialRecruitment.vue'),
-          },
-          {
-            name: 'Social Recruitment',
-            path: 'social_recruitment',
-            component: () => import('../screens/SocialRecruitment.vue'),
-          },
+          // {
+          //   path: '',
+          //   component: () => import('../screens/SocialRecruitment.vue'),
+          // },
+          // {
+          //   name: 'Social Recruitment',
+          //   path: 'social_recruitment',
+          //   component: () => import('../screens/SocialRecruitment.vue'),
+          // },
           {
             name: 'Company benefits',
             path: 'company_benefits',
@@ -38,6 +38,10 @@ const routes: RouteRecordRaw[] = [
             name: 'Resume Delivery',
             path: 'resume_delivery',
             component: () => import('../screens/ResumeDelivery.vue'),
+          },
+          {
+            path: '/:pathMatch(.*)',
+            component: () => import('../screens/CompanyBenefits.vue'),
           },
         ],
       },

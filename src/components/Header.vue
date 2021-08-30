@@ -23,7 +23,7 @@
         <router-link id="anchor-contact-us" to="/#contactUs">
           {{ $t('Contact Us') }}
         </router-link>
-        <router-link id="anchor-join-us" to="/join_us">
+        <router-link id="anchor-join-us" :to="{ name: 'Company benefits' }">
           {{ $t('Join Us') }}
         </router-link>
       </div>

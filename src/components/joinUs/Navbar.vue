@@ -2,18 +2,18 @@
   <div class="subTitleBar">
     <div class="m-h">
       <Container class="container">
-        <router-link :to="{ name: 'Social Recruitment' }">{{
-          $t('joinUS.Social recruitment')
-        }}</router-link>
-        <router-link :to="{ name: 'Company benefits' }">{{
-          $t('joinUS.Company benefits')
-        }}</router-link>
-        <router-link :to="{ name: 'Process & FAQ' }">{{
-          $t('joinUS.Process & FAQ')
-        }}</router-link>
-        <router-link :to="{ name: 'Resume Delivery' }">{{
-          $t('joinUS.Resume delivery')
-        }}</router-link>
+        <!-- <router-link :to="{ name: 'Social Recruitment' }">
+          {{ $t('joinUS.Social recruitment') }}
+        </router-link> -->
+        <router-link :to="{ name: 'Company benefits' }">
+          {{ $t('joinUS.Company benefits') }}
+        </router-link>
+        <router-link :to="{ name: 'Process & FAQ' }">
+          {{ $t('joinUS.Process & FAQ') }}
+        </router-link>
+        <router-link :to="{ name: 'Resume Delivery' }">
+          {{ $t('joinUS.Resume delivery') }}
+        </router-link>
       </Container>
     </div>
   </div>
