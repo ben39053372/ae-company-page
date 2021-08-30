@@ -29,6 +29,7 @@
 
 <style scoped>
   .footer {
+    display: none;
     background-color: var(--footer-color);
   }
 </style>
