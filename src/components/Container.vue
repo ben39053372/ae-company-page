@@ -4,7 +4,7 @@
 
 <style scoped>
   .container {
-    max-width: 99%;
+    max-width: calc(100% - 28px);
     margin: 0 auto;
   }
 
