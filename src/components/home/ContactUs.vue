@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="contactUs">
+  <div id="contactUs" class="contactUs">
     <h1>{{ $t('Contact Us') }}</h1>
     <div class="grid">
       <div>
@@ -31,7 +31,7 @@
       </div>
     </div>
 
-    <hr />
+    <hr class="hiddenOnMobile" />
   </div>
 </template>
 
@@ -53,7 +53,6 @@
   .grid {
     display: grid;
     grid-template-columns: repeat(4, var(--circle-size));
-    grid-auto-rows: var(--circle-size);
     grid-gap: 20%;
     justify-content: center;
     align-items: center;
@@ -93,6 +92,27 @@
     top: calc(calc(var(--circle-size) + 12px) / -2);
     transform: translateY(-50%);
     z-index: 0;
+  }
+
+  @media screen and (max-width: 640px) {
+    .contactUs {
+      --circle-size: 80px;
+
+      font-size: 10px;
+    }
+
+    hr {
+      display: none;
+    }
+
+    .grid {
+      grid-template-columns: repeat(2, var(--circle-size));
+      grid-gap: 30%;
+    }
+
+    .grid > div {
+      margin-bottom: var(--space-3xl);
+    }
   }
 
   span {

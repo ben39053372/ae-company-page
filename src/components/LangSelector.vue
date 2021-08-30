@@ -74,6 +74,8 @@
 
   .list div {
     display: flex;
+    position: relative;
+    right: 0;
     width: 120px;
     padding: var(--space-sm);
     background-color: #000;
@@ -81,6 +83,14 @@
     justify-content: center;
     gap: var(--space-md);
     align-items: center;
+  }
+
+  @media screen and (max-width: 530px) {
+    .list {
+      right: 0;
+      left: initial;
+      transform: initial;
+    }
   }
 
   .backdrop {

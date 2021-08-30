@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="companyCulture">
+  <div id="companyCulture" class="companyCulture">
     <h4>{{ $t('Company Culture') }}</h4>
     <LearnMore />
     <div class="grid">
@@ -78,7 +78,12 @@
     grid-gap: 10px;
     margin: 10px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 640px) {
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   .grid > div {

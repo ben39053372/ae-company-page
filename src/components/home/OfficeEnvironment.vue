@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="officeEnvironment">
+  <div id="officeEnvironment" class="officeEnvironment">
     <h4>{{ $t('Office Environment') }}</h4>
     <LearnMore class="more" />
     <div class="images">
@@ -35,9 +35,15 @@
   }
 
   .images {
-    display: flex;
-    align-items: center;
-    gap: var(--space-xl);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+
+  @media screen and (max-width: 640px) {
+    .images {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   img {

@@ -9,8 +9,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media only screen and (max-width: 460px) {
+.showOnMobile {
+  display: none;
+}
+
+@media only screen and (max-width: 530px) {
   .hiddenOnMobile {
     display: none;
+  }
+
+  .showOnMobile {
+    display: initial;
   }
 }

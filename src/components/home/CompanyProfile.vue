@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="companyProfile">
+  <div id="companyProfile" class="companyProfile">
     <Container class="container">
       <div class="more">
         <div class="red-block" />

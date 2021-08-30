@@ -19,10 +19,10 @@
         {{ $t('homeBanner.p2') }}
       </p>
     </Container>
-    <a class="more"
-      >{{ $t('learn more') }}
-      <img width="4" height="9" src="/icons/rightArrowWhite.webp"
-    /></a>
+    <a class="more">
+      {{ $t('learn more') }}
+      <img width="4" height="9" src="/icons/rightArrowWhite.webp" />
+    </a>
   </div>
 </template>
 <script lang="ts" setup>
