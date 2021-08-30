@@ -47,5 +47,12 @@ const routes: RouteRecordRaw[] = [
 
 export default createRouter({
   history: createWebHistory(),
+  scrollBehavior(to, from, savedPosition): any {
+    if (to.hash) {
+      return { el: to.hash, behavior: 'smooth' };
+    } else {
+      return { x: 0, y: 0 };
+    }
+  },
   routes,
 });
