@@ -35,6 +35,20 @@ module.exports = {
       'ObjectExpression > SpreadElement',
       'ObjectPattern > RestElement',
       'AwaitExpression'
-    ]
+    ],
+    'vue/html-indent': [1, 2, { // Vue 中的 html 的撰寫規則，詳請請查閱官方文件
+      attribute: 1,
+      baseIndent: 1,
+      closeBracket: 0,
+      alignAttributesVertically: true,
+      ignores: []
+    }],
+    'vue/html-closing-bracket-newline': [2, { // Vue 中的 html 的撰寫規則，詳請請查閱官方文件
+      singleline: 'never',
+      multiline: 'always'
+    }],
+    'vue/html-closing-bracket-spacing': [2, { // Vue 中的 html 的撰寫規則，詳請請查閱官方文件
+      selfClosingTag: 'always'
+    }]
   }
 }
