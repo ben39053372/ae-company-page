@@ -40,6 +40,10 @@
     grid-gap: 10px;
   }
 
+  .images div {
+    padding-bottom: 30px;
+  }
+
   @media screen and (max-width: 640px) {
     .images {
       grid-template-columns: repeat(2, 1fr);

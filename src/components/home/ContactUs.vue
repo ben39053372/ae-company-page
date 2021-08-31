@@ -94,7 +94,7 @@
     z-index: 0;
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 1024px) {
     .contactUs {
       --circle-size: 80px;
 

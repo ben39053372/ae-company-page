@@ -82,7 +82,7 @@
       position: absolute;
       top: 100%;
       left: 0;
-      z-index: 1;
+      z-index: 2;
       flex-direction: column;
       width: 100%;
       padding: 0;

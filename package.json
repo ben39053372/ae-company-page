@@ -10,6 +10,7 @@
     "stylelint": "npx stylelint \"src/**/*.{js,tsx,tsx,ts,vue}\""
   },
   "dependencies": {
+    "@vitejs/plugin-legacy": "^1.5.1",
     "vue": "^3.0.5",
     "vue-i18n": "^9.1.7",
     "vue-router": "4",
@@ -31,6 +32,7 @@
     "husky": "^7.0.0",
     "lint-staged": "^11.1.1",
     "prettier": "^2.3.2",
+    "regenerator-runtime": "^0.13.9",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
     "typescript": "^4.3.2",
