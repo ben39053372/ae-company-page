@@ -45,6 +45,7 @@
     open.value = false;
   };
 </script>
+
 <style scoped>
   .langSelector {
     position: relative;
@@ -59,6 +60,7 @@
     display: flex;
     align-items: center;
     gap: var(--space-md);
+    cursor: pointer;
   }
 
   .list {
@@ -83,6 +85,7 @@
     justify-content: center;
     gap: var(--space-md);
     align-items: center;
+    cursor: pointer;
   }
 
   @media screen and (max-width: 530px) {
