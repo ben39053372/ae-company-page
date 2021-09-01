@@ -4,59 +4,62 @@
     <LearnMore class="more" />
     <div class="images">
       <div>
-        <img src="/images/homePage/辦公區域.webp" />
+        <img src="/images/homePage/辦公區域.png" />
         <div>{{ $t('Office area') }}</div>
       </div>
       <div>
-        <img src="/images/homePage/公共討論區.webp" />
+        <img src="/images/homePage/公共討論區.png" />
         <div>{{ $t('Public discussion area') }}</div>
       </div>
       <div>
-        <img src="/images/homePage/咖啡廳.webp" />
+        <img src="/images/homePage/咖啡廳.png" />
         <div>{{ $t('Cafe') }}</div>
       </div>
       <div>
-        <img src="/images/homePage/公司外景.webp" />
+        <img src="/images/homePage/公司外景.png" />
         <div>{{ $t('Outdoor Scene') }}</div>
       </div>
     </div>
   </div>
 </template>
 
-<script lang="ts" setup>
+<script lang="ts">
   import LearnMore from '../LearnMore.vue';
+  export default {
+    components: {
+      LearnMore,
+    },
+  };
 </script>
 
 <style scoped>
   .officeEnvironment {
+    background-color: #eee;
     background-color: var(--bg-color);
     text-align: center;
-    padding: var(--space-xl) calc(var(--space-3xl) * 2);
+    padding: 16px 32px;
   }
 
   .images {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .images div {
+    flex: 1;
+    margin: 10px;
     padding-bottom: 30px;
   }
 
-  @media screen and (max-width: 640px) {
-    .images {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
   img {
-    width: 100%;
-    height: 100%;
+    width: 350px;
+    height: 350px;
   }
 
   .more {
+    margin-top: 20px;
     margin-top: var(--space-xl);
+    margin-bottom: 40px;
     margin-bottom: calc(var(--space-xl) * 2);
   }
 </style>

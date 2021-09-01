@@ -7,10 +7,10 @@
       </div>
       <img
         class="image hiddenOnMobile"
-        src="/images/homePage/摄图网_401355724_查看人物简介.webp"
+        src="/images/homePage/摄图网_401355724_查看人物简介.png"
         srcset="
-          /images/homePage/摄图网_401355724_查看人物简介.webp    1x,
-          /images/homePage/摄图网_401355724_查看人物简介@2x.webp 2x
+          /images/homePage/摄图网_401355724_查看人物简介.png    1x,
+          /images/homePage/摄图网_401355724_查看人物简介@2x.png 2x
         "
       />
       <div class="text">
@@ -29,9 +29,16 @@
     </Container>
   </div>
 </template>
-<script lang="ts" setup>
+<script lang="ts">
   import Container from '../Container.vue';
   import LearnMore from '../LearnMore.vue';
+  export default {
+    name: 'CompanyProfile',
+    components: {
+      Container,
+      LearnMore,
+    },
+  };
 </script>
 
 <style scoped>
@@ -47,6 +54,7 @@
     display: inline-block;
     width: 43px;
     height: 10px;
+    background-color: #c32027;
     background-color: var(--red);
   }
 

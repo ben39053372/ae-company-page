@@ -1,42 +1,51 @@
 <template lang="">
   <div id="contactUs" class="contactUs">
     <h1>{{ $t('Contact Us') }}</h1>
+
     <div class="grid">
+      <hr class="hiddenOnMobile" />
+
       <div>
         <div>
-          <img width="34" height="48" src="/images/homePage/地址.webp" />
+          <img width="34" height="48" src="/images/homePage/地址.png" />
         </div>
         <span class="detail">{{ $t('company address') }}</span>
       </div>
 
       <div>
         <div>
-          <img width="49" height="49" src="/images/homePage/电话.webp" />
+          <img width="49" height="49" src="/images/homePage/电话.png" />
         </div>
         <span class="detail">{{ $t('phone') }}</span>
       </div>
 
       <div>
         <div>
-          <img width="47" height="39" src="/images/homePage/邮箱.webp" />
+          <img width="47" height="39" src="/images/homePage/邮箱.png" />
         </div>
         <span class="detail">{{ HR_EMAIL }}</span>
       </div>
 
       <div>
         <div>
-          <img width="51" height="51" src="/images/homePage/互联网金额.webp" />
+          <img width="51" height="51" src="/images/homePage/互联网金额.png" />
         </div>
         <span class="detail">{{ WEB }}</span>
       </div>
     </div>
-
-    <hr class="hiddenOnMobile" />
   </div>
 </template>
 
-<script lang="ts" setup>
+<script lang="ts">
   import { HR_EMAIL, WEB } from '../../const';
+  export default {
+    data: function() {
+      return {
+        HR_EMAIL,
+        WEB,
+      };
+    },
+  };
 </script>
 
 <style scoped>
@@ -51,16 +60,19 @@
   }
 
   .grid {
-    display: grid;
-    grid-template-columns: repeat(4, var(--circle-size));
-    grid-gap: 20%;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    position: relative;
+    left: 0;
+    justify-content: space-around;
+    padding-bottom: 100px;
   }
 
   .grid > div {
     border-radius: 50%;
+    height: 100px;
     height: var(--circle-size);
+    width: 100px;
+    width: var(--circle-size);
     box-shadow: inset 0 0 8px 1px #fff9;
     background-color: #21222a;
     border: 1px solid #fff;
@@ -70,6 +82,8 @@
 
   .grid > div > div {
     border-radius: 50%;
+    width: 100%;
+    height: 100%;
     height: var(--circle-size);
     box-shadow: 0 0 8px 1px #fff9;
     position: relative;
@@ -85,13 +99,16 @@
 
   hr {
     border: 0;
+    background: #fff;
     background: linear-gradient(to right, #fff3, #fff, #fff3);
     height: 2px;
     width: 100%;
-    position: relative;
-    top: calc(calc(var(--circle-size) + 12px) / -2);
+    position: absolute;
+    top: 45px;
+    top: calc(var(--circle-size) / 2 - 5px);
+    left: 0;
     transform: translateY(-50%);
-    z-index: 0;
+    z-index: 1;
   }
 
   @media screen and (max-width: 1024px) {
@@ -106,7 +123,8 @@
     }
 
     .grid {
-      grid-template-columns: repeat(2, var(--circle-size));
+      grid-template-columns: var(--circle-size) var(--circle-size);
+      -ms-grid-columns: var(--circle-size) var(--circle-size);
       grid-gap: 30%;
     }
 
@@ -118,7 +136,9 @@
   span {
     position: absolute;
     white-space: nowrap;
+    left: 50%;
     transform: translateX(-50%);
+    padding-top: 50px;
     padding-top: var(--space-3xl);
   }
 </style>

@@ -23,8 +23,13 @@
     </Container>
   </div>
 </template>
-<script setup>
+<script>
   import Container from './Container.vue';
+  export default {
+    components: {
+      Container,
+    },
+  };
 </script>
 
 <style scoped>

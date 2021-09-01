@@ -2,8 +2,8 @@
   <div class="container">
     <img
       id="banner"
-      src="/images/joinUs/导航条.webp"
-      srcset="/images/joinUs/导航条.webp 1x, /images/joinUs/导航条@2x.webp 2x"
+      src="/images/joinUs/导航条.png"
+      srcset="/images/joinUs/导航条.png 1x, /images/joinUs/导航条@2x.png 2x"
     />
     <Container class="center">
       <h1>{{ $t('Join Us') }}</h1>
@@ -12,8 +12,13 @@
     </Container>
   </div>
 </template>
-<script lang="ts" setup>
+<script>
   import Container from '../Container.vue';
+  export default {
+    components: {
+      Container,
+    },
+  };
 </script>
 
 <style scoped>
@@ -50,6 +55,9 @@
     left: 50%;
     color: #fff;
     display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     align-items: center;
     transform: translateX(-50%);
   }
