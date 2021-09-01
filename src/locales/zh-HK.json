@@ -1,0 +1,125 @@
+{
+  "Traditional Chinese": "繁體中文",
+  "index": "首頁",
+  "Company Profile": "公司簡介",
+  "Office Environment": "辦公環境",
+  "Company Culture": "公司文化",
+  "Contact Us": "聯繫我們",
+  "Join Us": "加入我們",
+  "HONG KONG ASIA ELITE NETWORK TECHNOLOGY CO., LTD": "香港亞特網絡科技有限公司",
+  "learn more": "進一步瞭解",
+  "Email": "諮詢郵箱",
+  "Office area": "辦公區域",
+  "Public discussion area": "公共討論區",
+  "Cafe": "咖啡廳",
+  "Outdoor Scene": "公司外景",
+  "homeBanner": {
+    "p1": "香港亞特網絡科技以{0}的高質量產品為服務宗旨主要為海外客户提供高質量的軟件研發及數據中心維護服務",
+    "p1-red": "高效-快捷、極低成本、內容豐富、安全穩定",
+    "p2": "Hong Kong ATC network technology to efficient low-cost, rich, safe and stable high-quality products for the purpose of providing overseas customers with high-quality software development and data center maintenance services"
+  },
+  "companyProfile": {
+    "p1": "香港亞特網絡科技有限公司成立於2018年，註冊於香港，主要為海外客户提供高質量的軟件研發及數據中心維護服務，現已承接多家遊戲及娛樂平台。",
+    "strategy&target": "企業策略及目標",
+    "p2": "亞特網絡立誌成為在全球具有競爭力的軟件研發及數據中心維護服務供應商。",
+    "p3": "展望未來，亞特網絡將持續專註於尋求更多的海外合作夥伴，將我們的業務全球化，相信隨著的業務的拓展和鞏固，我們將會成為在全球有競爭力的數據中心維護服務供應商。"
+  },
+  "companyCulture": {
+    "vision": {
+      "title": "願景",
+      "sub": "用户導向、坦誠直接、擁抱變化、持續改進",
+      "p": "我們尊重差異，我們註重成長，我們把\"為用户創造美好體驗\"作為永恆的追求我們秉承\"從優秀到卓越\"的精神在見證公司成長的同時，也成就自身的職業輝煌"
+    },
+    "mission": {
+      "title": "使命",
+      "sub": "為用户創造高品質的產品體驗",
+      "p": "為用户創造具備優質和完美體驗的產品是亞特永恆的追求"
+    },
+    "values": {
+      "title": "價值觀",
+      "sub": "關愛 共贏 勇於創新 全力以赴",
+      "p": "待人真誠，彼此包容，為人正直，懂得感恩，壹起營造壹個輕鬆快樂的大家庭關註同事成長，和亞特壹起進步；關註用户，用户價值至上，提供公平公正的平台環境提倡敢想敢做，鼓勵大膽創新，追求卓越每個人都是公司的主人翁，主動積極，尋求突破，每壹件事情都能全力以赴"
+    },
+    "management": {
+      "title": "管理理念",
+      "sub": "共同成長 打造學習型團隊",
+      "p": "心有多大，舞台就有多大以人為本，鼓勵每個人的想法，主動積極、想到就做、勇於冒險、不怕犯錯無限去探討可能性。強化執行能力，攻必克，戰必勝，每個人都是公司的主人翁，有必勝的決心"
+    }
+  },
+  "company address": "香港觀塘區雙港灣廣場偉業街180號26樓",
+  "phone": "852-95875005",
+  "jobList": {
+    "Job Title": "職位名稱",
+    "Number Of Recruits": "招聘人數",
+    "Working Place": "工作地區",
+    "Released At": "發布時間",
+    "operation": "操作",
+    "check": "查看"
+  },
+  "joinUS": {
+    "banner sub title": "我們珍視每壹位員工; 關註其成長並重視每個人的貢獻",
+    "Social recruitment": "社會招聘",
+    "Company benefits": "公司福利",
+    "Process & FAQ": "流程&FAQ",
+    "Resume delivery": "投遞簡歷"
+  },
+  "company benefits": {
+    "Salary": "工資",
+    "Performance Bonus": "績效獎金",
+    "Paid sick leave": "帶薪病假",
+    "Holiday": "假期",
+    "Social insurance": "社會保險",
+    "Annual performance points": "年度績效積分",
+    "Promotion": "職位晉升",
+    "Special contribution": "特殊貢獻",
+    "Reasonable suggestion": "合理化建議",
+    "Lecture training": "講座培訓",
+    "Introduce OKR mechanism": "引入OKR機制",
+    "Growth plan": {
+      "title": "成長計劃",
+      "Staff growth and long-term development": "員工成長和長遠發展",
+      "p": "亞特網絡作為創業平台，會給予很多人發揮個人優勢的空間和自由度，並與企業共同成長 員工在公司內達到中層管理者或高級專家後，根據績效表現，可以在公司評估後獲得公司期權，享受公司長期增值帶來的價值。"
+    },
+    "Management channel": "管理通道",
+    "Technology Channel": "技術通道",
+    "Senior management": "高層管理者",
+    "Middle manager": "中層管理者",
+    "Grassroots managers": "基層管理者",
+    "Senior expert": "資深專家",
+    "expert": "專家",
+    "Core staff": "核心員工",
+    "Staff": "普通員工",
+    "p1": "公司根據員工的崗位為員工提供具有市場競爭力的工資，並在每年根據最新市場趨勢、員工的薪酬水平以及績效水平進行綜合的回顧和審閲。",
+    "p2": "我們會根據公司整體業績和員工績效表現提供績效獎金。績效獎金與員工績效和貢獻緊密聯系，體現與公司與員工同成長、共分享的理念。",
+    "p3": "法定假期方面，帶薪病假、法定公眾假期、婚假、喪假、產假、陪產假、哺乳假等相關假期。",
+    "p4": "公司為員工提供多種全薪假期，包括法定節假日、婚假、喪假、產假、男職員護理假哺乳假等，每位員工轉正後立即擁有3天帶薪假轉正滿壹年後，工作時間每滿壹個月則增加壹天的帶薪假，最高可累計18天的帶薪年假。",
+    "p5": "我們為員工提供完善的保障計劃，包括國家法定的養老保險、醫療保險、工傷保險、失業保險、生育保險及根據政府政策繳納住房公積金。"
+  },
+  "process": {
+    "Resume delivery": "簡歷投遞",
+    "Resume screening": "簡歷篩選",
+    "working day": "{0}個工作日",
+    "round": "{0}輪",
+    "Written interview": "筆試面試",
+    "Get Offer": "錄用OFFER"
+  },
+  "faq": {
+    "q1": "我可以通過什麼方式申請亞特網絡的職位？",
+    "a1": "直接發送簡歷到郵箱：{0}",
+    "q2": "投遞簡歷以後，多久會收到回復？",
+    "a2": "投遞簡歷後，我們會有專門的同事跟進相關事宜，如果您的簡歷符合要求，我們會在7個工作日內安排專人與您聯系。如果您的情況不符合職位要求，我們會優先將您的應聘資料保存在我們的人才儲備庫中，同時您可隨時更新簡歷，若今後出現崗位空缺時我們將會優先考慮！",
+    "q3": "我可以申請幾個職位？",
+    "a3": "網申限投壹個職位，請務必仔細閲讀各職位的崗位職責及任職要求後投遞簡歷。",
+    "q4": "去年曾經投遞過亞特網絡的職位，今年還可以再投遞嗎？",
+    "a4": "可以，簡歷投遞壹個月後，可再次投遞香港亞特網絡科技的職位。",
+    "q5": "我和某個崗位除了學歷以及專業要求之外，都很符合，我還可以投遞該崗位嗎？",
+    "a5": "可以的，公司某些崗位對學歷及專業有壹定的要求，但學歷和專業不是公司取才的唯壹衡量標準，我們更看重的是您的能力和經驗的積累。",
+    "q6": "如果在應聘過程中遇到了問題，我該聯系誰？",
+    "a6": "在應聘過程中，如果有遇到任何問題，或是有意見和建議，非常歡迎您與我們取得聯系。"
+  },
+  "resume": {
+    "Human Resources Department Phone number": "人力資源部門電話",
+    "Resume receiving and consultation email": "簡歷接收及諮詢郵箱",
+    "Contact person": "聯繫人"
+  }
+}

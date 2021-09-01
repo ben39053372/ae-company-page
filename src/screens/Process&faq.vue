@@ -1,7 +1,7 @@
 <template lang="">
   <div class="container">
     <Container>
-      <svg viewBox="0 0 800 260">
+      <svg viewBox="0 0 800 260" width="800" height="260">
         <defs>
           <filter id="solid" x="-0.1" y="0" width="1.2" height="1">
             <feFlood flood-color="#fff" result="bg" />
@@ -13,7 +13,7 @@
         </defs>
         <line y2="165" x2="800" y1="165" x1="0" stroke="#ccc" in="bg" />
         <g transform="translate(60,60)">
-          <image href="/icons/发布.webp" height="70" width="70" />
+          <image href="/icons/发布.png" height="70" width="70" />
           <text
             filter="url(#solid)"
             text-anchor="start"
@@ -48,7 +48,7 @@
         </g>
 
         <g transform="translate(460,60)">
-          <image href="/icons/考试安排.webp" height="70" width="70" />
+          <image href="/icons/考试安排.png" height="70" width="70" />
           <text
             filter="url(#solid)"
             text-anchor="start"
@@ -71,7 +71,7 @@
         </g>
 
         <g transform="translate(660,60)">
-          <image href="/icons/工作包.webp" height="70" width="70" />
+          <image href="/icons/工作包.png" height="70" width="70" />
           <text
             filter="url(#solid)"
             text-anchor="start"
@@ -131,9 +131,21 @@
     </Container>
   </div>
 </template>
-<script setup>
+<script>
   import Container from '../components/Container.vue';
   import { EMAIL, PHONE } from '../const';
+
+  export default {
+    components: {
+      Container,
+    },
+    data: function() {
+      return {
+        EMAIL,
+        PHONE,
+      };
+    },
+  };
 </script>
 
 <style scoped>
@@ -151,6 +163,9 @@
 
   ol li {
     display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     gap: var(--space-md);
     counter-increment: counter;
     padding-bottom: var(--space-xl);
@@ -163,6 +178,9 @@
 
   ol li::before {
     display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     min-width: var(--ball-size);
     width: var(--ball-size);
     height: var(--ball-size);

@@ -17,7 +17,7 @@
             </td>
             <td class="red">
               {{ $t('jobList.check') }}
-              <img width="4" height="9" src="/icons/rightArrowRed.webp" />
+              <img width="4" height="9" src="/icons/rightArrowRed.png" />
             </td>
           </tr>
         </tbody>
@@ -25,7 +25,7 @@
     </Container>
   </div>
 </template>
-<script setup>
+<script>
   import Container from '../components/Container.vue';
   const jobsData = [
     {
@@ -41,6 +41,17 @@
       'Released At': 'Released2',
     },
   ];
+
+  export default {
+    components: {
+      Container,
+    },
+    data: function() {
+      return {
+        jobsData,
+      };
+    },
+  };
 </script>
 
 <style scoped>

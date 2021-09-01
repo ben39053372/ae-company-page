@@ -29,17 +29,28 @@
       </div>
       <LangSelector />
     </Container>
+    <div v-if="open" class="backdrop" @click="open = false" />
   </div>
-  <div v-if="open" class="backdrop" @click="open = false" />
 </template>
-<script setup>
-  import { ref } from 'vue';
+<script>
   import Container from './Container.vue';
   import LangSelector from './LangSelector.vue';
 
-  const open = ref(false);
-  const onHamburgerClick = () => {
-    open.value = !open.value;
+  export default {
+    components: {
+      Container,
+      LangSelector,
+    },
+    data: function() {
+      return {
+        open: false,
+      };
+    },
+    methods: {
+      onHamburgerClick() {
+        this.open = !this.open;
+      },
+    },
   };
 </script>
 
@@ -52,6 +63,9 @@
   .header > div {
     margin: 0 auto;
     display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     justify-content: space-between;
     align-items: center;
     padding: 16px 0;
@@ -68,6 +82,9 @@
 
   .links {
     display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     padding: 0 var(--space-xl);
     flex: 1;
     justify-content: space-around;
