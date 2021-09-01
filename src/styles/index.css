@@ -26,6 +26,6 @@ html {
   }
 
   .showOnMobile {
-    display: initial;
+    display: block;
   }
 }

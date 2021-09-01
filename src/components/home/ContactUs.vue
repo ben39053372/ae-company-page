@@ -146,7 +146,7 @@
     white-space: nowrap;
     left: 50%;
     transform: translateX(-50%);
-    padding-top: 50px;
+    padding-top: 28px;
     padding-top: var(--space-3xl);
   }
 </style>
