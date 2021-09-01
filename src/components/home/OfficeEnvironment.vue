@@ -48,8 +48,13 @@
     margin: 10px;
     padding-bottom: 30px;
   }
+  @media screen and (max-width: 960px) {
+    .images div {
+      flex-basis: 100%;
+    }
+  }
   img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
   }
   .more {
