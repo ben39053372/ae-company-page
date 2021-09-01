@@ -39,23 +39,19 @@
     text-align: center;
     padding: 16px 32px;
   }
-
   .images {
     display: flex;
     flex-wrap: wrap;
   }
-
   .images div {
     flex: 1;
     margin: 10px;
     padding-bottom: 30px;
   }
-
   img {
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    height: auto;
   }
-
   .more {
     margin-top: 20px;
     margin-top: var(--space-xl);
