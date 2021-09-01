@@ -5,4 +5,4 @@
 # npx stylelint "src/**/*.{css,scss,sass} --fix"
 # npx eslint "src/**/*.{js,tsx,tsx,ts,vue}" --fix
 # npm run build
-npx lint-staged
+# npx lint-staged
