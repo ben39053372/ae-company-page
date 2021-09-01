@@ -1,9 +1,9 @@
-<template lang="">
+<template>
   <div class="langSelector">
     <div class="trigger" @click="onTriggerClick">
-      <img v-if="selectedLang?.id === 'zh-HK'" src="/icons/hk.webp" />
-      <img v-if="selectedLang?.id === 'zh-CN'" src="/icons/china.webp" />
-      <span class="hiddenOnMobile">{{ selectedLang?.name }}</span>
+      <img v-if="selectedLang.id === 'zh-HK'" src="/icons/hk.png" />
+      <img v-if="selectedLang.id === 'zh-CN'" src="/icons/china.png" />
+      <span class="hiddenOnMobile">{{ selectedLang.name }}</span>
     </div>
     <div v-if="open" class="backdrop" @click="closeLangList" />
     <div v-show="open" class="list">
@@ -13,36 +13,41 @@
         class="langItem"
         @click="onLangSelect(lang)"
       >
-        <img v-if="lang.id === 'zh-HK'" src="/icons/hk.webp" />
-        <img v-if="lang.id === 'zh-CN'" src="/icons/china.webp" />
+        <img v-if="lang.id === 'zh-HK'" src="/icons/hk.png" />
+        <img v-if="lang.id === 'zh-CN'" src="/icons/china.png" />
         {{ lang.name }}
       </div>
     </div>
   </div>
 </template>
-<script setup>
-  import { computed, ref } from 'vue';
-  import { useI18n } from 'vue-i18n';
-  const open = ref(false);
-  const langs = [
-    { id: 'zh-HK', name: '繁體中文' },
-    { id: 'zh-CN', name: '简体中文' },
-  ];
-  const { locale } = useI18n();
-
-  const selectedLang = computed(() => langs.find(i => i.id === locale.value));
-
-  const onTriggerClick = () => {
-    console.log(open.value);
-    open.value = !open.value;
-  };
-
-  const onLangSelect = lang => {
-    locale.value = lang.id;
-  };
-
-  const closeLangList = () => {
-    open.value = false;
+<script scoped>
+  export default {
+    data: function() {
+      return {
+        open: false,
+        langs: [
+          { id: 'zh-HK', name: '繁體中文' },
+          { id: 'zh-CN', name: '简体中文' },
+        ],
+      };
+    },
+    methods: {
+      onTriggerClick() {
+        this.open = !this.open;
+      },
+      onLangSelect(lang) {
+        this.$root.$i18n.locale = lang.id;
+      },
+      closeLangList() {
+        this.open = false;
+      },
+    },
+    computed: {
+      selectedLang: function() {
+        console.log(this.$root.$i18n);
+        return this.langs.find(i => i.id === this.$root.$i18n.locale);
+      },
+    },
   };
 </script>
 
@@ -58,6 +63,9 @@
 
   .trigger {
     display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     align-items: center;
     gap: var(--space-md);
     cursor: pointer;
@@ -76,6 +84,9 @@
 
   .list div {
     display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     position: relative;
     right: 0;
     width: 120px;

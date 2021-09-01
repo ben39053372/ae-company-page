@@ -5,10 +5,10 @@
         <img
           width="33"
           height="25"
-          src="/images/resumeDelivery/邮箱.webp"
+          src="images/resumeDelivery/邮箱.png"
           srcset="
-            /images/resumeDelivery/邮箱.webp    1x,
-            /images/resumeDelivery/邮箱@2x.webp 2x
+            images/resumeDelivery/邮箱.png    1x,
+            images/resumeDelivery/邮箱@2x.png 2x
           "
         />
         <h6>{{ $t('resume.Resume receiving and consultation email') }}</h6>
@@ -21,10 +21,10 @@
         <img
           width="23"
           height="28"
-          src="/images/resumeDelivery/电话.webp"
+          src="images/resumeDelivery/电话.png"
           srcset="
-            /images/resumeDelivery/电话.webp    1x,
-            /images/resumeDelivery/电话@2x.webp 2x
+            images/resumeDelivery/电话.png    1x,
+            images/resumeDelivery/电话@2x.png 2x
           "
         />
         <h6>{{ $t('resume.Human Resources Department Phone number') }}</h6>
@@ -37,14 +37,29 @@
   </div>
 </template>
 
-<script setup>
+<script>
   import Container from '../components/Container.vue';
   import { EMAIL, PHONE } from '../const';
+
+  export default {
+    components: {
+      Container,
+    },
+    data: function() {
+      return {
+        EMAIL,
+        PHONE,
+      };
+    },
+  };
 </script>
 
 <style scoped>
   .container {
     display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: calc(var(--space-3xl) * 3);

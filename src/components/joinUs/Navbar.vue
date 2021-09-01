@@ -18,8 +18,13 @@
     </div>
   </div>
 </template>
-<script setup>
+<script>
   import Container from '../Container.vue';
+  export default {
+    components: {
+      Container,
+    },
+  };
 </script>
 
 <style scoped>
@@ -31,6 +36,9 @@
 
   .container {
     display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     justify-content: space-around;
     align-items: center;
   }
