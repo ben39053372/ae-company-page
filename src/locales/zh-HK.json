@@ -98,8 +98,8 @@
   "process": {
     "Resume delivery": "簡歷投遞",
     "Resume screening": "簡歷篩選",
-    "working day": "{0}個工作日",
-    "round": "{0}輪",
+    "working day": "個工作日",
+    "round": "輪",
     "Written interview": "筆試面試",
     "Get Offer": "錄用OFFER"
   },

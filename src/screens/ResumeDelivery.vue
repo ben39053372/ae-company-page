@@ -5,10 +5,10 @@
         <img
           width="33"
           height="25"
-          src="images/resumeDelivery/邮箱.png"
+          src="/images/resumeDelivery/邮箱.png"
           srcset="
-            images/resumeDelivery/邮箱.png    1x,
-            images/resumeDelivery/邮箱@2x.png 2x
+            /images/resumeDelivery/邮箱.png    1x,
+            /images/resumeDelivery/邮箱@2x.png 2x
           "
         />
         <h6>{{ $t('resume.Resume receiving and consultation email') }}</h6>
@@ -21,10 +21,10 @@
         <img
           width="23"
           height="28"
-          src="images/resumeDelivery/电话.png"
+          src="/images/resumeDelivery/电话.png"
           srcset="
-            images/resumeDelivery/电话.png    1x,
-            images/resumeDelivery/电话@2x.png 2x
+            /images/resumeDelivery/电话.png    1x,
+            /images/resumeDelivery/电话@2x.png 2x
           "
         />
         <h6>{{ $t('resume.Human Resources Department Phone number') }}</h6>
@@ -45,7 +45,7 @@
     components: {
       Container,
     },
-    data: function() {
+    data: function () {
       return {
         EMAIL,
         PHONE,
@@ -66,7 +66,6 @@
     margin-bottom: calc(var(--space-3xl) * 3);
     padding: 0 20%;
   }
-
   .box {
     padding: var(--space-3xl) calc(var(--space-3xl) * 3);
     margin: var(--space-md) auto;
