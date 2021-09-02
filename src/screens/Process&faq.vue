@@ -88,9 +88,9 @@
         <li>
           <div>
             <h6>{{ $t('faq.q1') }}</h6>
-            <i18n-t keypath="faq.a1" tag="p">
+            <i18n path="faq.a1" tag="p">
               <span class="red">{{ EMAIL }}</span>
-            </i18n-t>
+            </i18n>
           </div>
         </li>
         <li>
@@ -139,7 +139,7 @@
     components: {
       Container,
     },
-    data: function() {
+    data: function () {
       return {
         EMAIL,
         PHONE,
@@ -153,14 +153,11 @@
     margin-top: var(--space-2xl);
     margin-bottom: var(--space-2xl);
   }
-
   ol {
     --ball-size: 42px;
-
     list-style: none;
     counter-reset: counter;
   }
-
   ol li {
     display: flex;
     display: -webkit-box;
@@ -170,12 +167,10 @@
     counter-increment: counter;
     padding-bottom: var(--space-xl);
   }
-
   ol li h6 {
     margin-top: 0;
     margin-bottom: var(--space-sm);
   }
-
   ol li::before {
     display: flex;
     display: -webkit-box;
@@ -190,11 +185,9 @@
     background-color: var(--red);
     color: #fff;
   }
-
   ol li:nth-child(n + 9)::before {
     content: counter(counter);
   }
-
   ol li:nth-child(-n + 9)::before {
     content: '0' counter(counter);
   }
