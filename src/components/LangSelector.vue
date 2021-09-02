@@ -22,7 +22,12 @@
 </template>
 <script scoped>
   export default {
-    data: function() {
+    mounted() {
+      if (localStorage.lang) {
+        this.$root.$i18n.locale = localStorage.lang;
+      }
+    },
+    data: function () {
       return {
         open: false,
         langs: [
@@ -37,13 +42,14 @@
       },
       onLangSelect(lang) {
         this.$root.$i18n.locale = lang.id;
+        localStorage.lang = lang.id;
       },
       closeLangList() {
         this.open = false;
       },
     },
     computed: {
-      selectedLang: function() {
+      selectedLang: function () {
         console.log(this.$root.$i18n);
         return this.langs.find(i => i.id === this.$root.$i18n.locale);
       },
@@ -55,12 +61,10 @@
   .langSelector {
     position: relative;
   }
-
   img {
     width: 22px;
     height: 22px;
   }
-
   .trigger {
     display: flex;
     display: -webkit-box;
@@ -70,7 +74,6 @@
     gap: var(--space-md);
     cursor: pointer;
   }
-
   .list {
     position: absolute;
     left: 50%;
@@ -81,7 +84,6 @@
     flex-direction: column;
     z-index: 1;
   }
-
   .list div {
     display: flex;
     display: -webkit-box;
@@ -98,7 +100,6 @@
     align-items: center;
     cursor: pointer;
   }
-
   @media screen and (max-width: 530px) {
     .list {
       right: 0;
@@ -106,7 +107,6 @@
       transform: initial;
     }
   }
-
   .backdrop {
     position: fixed;
     top: 0;
