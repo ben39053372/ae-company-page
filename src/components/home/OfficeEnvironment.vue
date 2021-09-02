@@ -38,6 +38,7 @@
     background-color: var(--bg-color);
     text-align: center;
     padding: 16px 32px;
+    height: 100%;
   }
   .images {
     display: flex;
