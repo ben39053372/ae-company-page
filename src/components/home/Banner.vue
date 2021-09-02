@@ -2,8 +2,11 @@
   <div class="container">
     <img
       id="banner"
-      src="images/homePage/导航条.png"
-      srcset="images/homePage/导航条.png 1x, images/homePage/导航条@2x.png 2x"
+      src="/images/homePage/导航条_low.png"
+      srcset="
+        /images/homePage/导航条_low.png    1x,
+        /images/homePage/导航条_low@2x.png 2x
+      "
     />
     <Container class="center">
       <h1>{{ $t('HONG KONG ASIA ELITE NETWORK TECHNOLOGY CO., LTD') }}</h1>
@@ -37,14 +40,12 @@
     position: relative;
     text-align: center;
   }
-
   #banner {
     width: 100%;
     height: 500px;
     object-fit: cover;
     object-position: center;
   }
-
   .center {
     position: absolute;
     top: 50%;
@@ -54,11 +55,9 @@
     color: #fff;
     padding: 30px 0;
   }
-
   .red {
     color: #c32027;
   }
-
   .more {
     position: absolute;
     bottom: 10%;
@@ -72,7 +71,6 @@
     align-items: center;
     transform: translateX(-50%);
   }
-
   .more img {
     margin-left: var(--space-xs);
   }
